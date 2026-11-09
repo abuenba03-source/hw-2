@@ -12,20 +12,17 @@ public class Contractoremployee extends employee {
     private int hoursWorked;
 
     public Contractoremployee(String id, String name, LocalDate joinDate, int hourlyRate, int hoursWorked) {
-        // الراتب الأساسي يحسب كحاصل ضرب الساعات في المعدل بالساعة
         super(id, name, hourlyRate * hoursWorked, joinDate);
         this.hourlyRate = hourlyRate;
         this.hoursWorked = hoursWorked;
     }
 
     public double calculateNetSalary() {
-        // صافي الراتب = إجمالي الدخل - الضريبة
         return (hourlyRate * hoursWorked) - calculateTax();
     }
 
     @Override
     public double calculateBonus(double performanceScore) {
-        // مكافأة إضافية حسب ساعات العمل والأداء
         return (hourlyRate * hoursWorked) * (performanceScore / 100.0);
     }
 
@@ -44,20 +41,20 @@ public class Contractoremployee extends employee {
 
     @Override
     public int compareTo(employee o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 
     @Override
     public double calculatetax() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 
     @Override
     public double calculatebonus(double performanceScore) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");  
     }
 
     private int calculateTax() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
