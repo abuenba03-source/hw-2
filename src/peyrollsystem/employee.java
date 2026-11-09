@@ -19,7 +19,7 @@ public abstract class employee implements Comparable<employee >, Taxable, BonusC
 
     @Override
     public int compareTo(employee other) {
-        // المقارنة على أساس الراتب الأساسي (أو id حسب الرغبة)
+        
         return Double.compare(this.baseSalary, other.baseSalary);
     }
 
