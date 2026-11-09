@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package peyrollsystem;
 import java.time.LocalDate;
 
@@ -16,13 +12,13 @@ public class FullTimeemployee extends employee {
 
     @Override
     public double calculateNetSalary() {
-        // صافي الراتب = الراتب الأساسي + العلاوة - الضريبة
+    
         return (baseSalary + allowance) - calculateTax();
     }
 
     @Override
     public double calculateBonus(double performanceScore) {
-        // نسبة المكافأة حسب تقييم الأداء من الراتب الأساسي
+        
         return baseSalary * (performanceScore / 100.0);
     }
 
@@ -37,16 +33,16 @@ public class FullTimeemployee extends employee {
 
     @Override
     public int compareTo(employee o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public double calculatetax() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 
     @Override
     public double calculatebonus(double performanceScore) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
