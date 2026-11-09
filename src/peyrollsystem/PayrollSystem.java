@@ -15,7 +15,7 @@ public class PayrollSystem {
         
         Collections.sort(employees);
 
-        // طباعة تفاصيل كل موظف
+        
         for (employee emp : employees) {
             System.out.println(emp);
             System.out.println("taxs: " + emp.calculateTax());
